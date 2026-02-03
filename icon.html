@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BaseTap - Icon Generator</title>
+  <style>
+    body { font-family: system-ui; padding: 20px; background: #111; color: #fff; }
+    .row { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 24px; align-items: flex-start; }
+    canvas { display: block; background: #1a1a2e; border-radius: 8px; }
+    a { display: inline-block; margin-top: 12px; padding: 12px 24px; background: #3b82f6; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; }
+    a:hover { background: #2563eb; }
+    .box { display: flex; flex-direction: column; }
+  </style>
+</head>
+<body>
+  <h1>BaseTap Icon Generator</h1>
+  <div class="row">
+    <div class="box">
+      <canvas id="iconCanvas" width="200" height="200"></canvas>
+      <a href="#" id="iconDownload">Download icon.png</a>
+    </div>
+    <div class="box">
+      <canvas id="previewCanvas" width="600" height="400"></canvas>
+      <a href="#" id="previewDownload">Download preview.png</a>
+    </div>
+  </div>
+
+  <script>
+    function drawIcon(ctx) {
+      const w = ctx.canvas.width, h = ctx.canvas.height;
+      const g = ctx.createLinearGradient(0, 0, w, h);
+      g.addColorStop(0, '#1e3a5f');
+      g.addColorStop(1, '#0a0a0a');
+      ctx.fillStyle = g;
+      ctx.fillRect(0, 0, w, h);
+      ctx.fillStyle = '#3b82f6';
+      ctx.font = 'bold 48px system-ui';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('⚡', w/2, h/2 - 8);
+      ctx.font = 'bold 14px system-ui';
+      ctx.fillStyle = '#9ca3af';
+      ctx.fillText('TAP', w/2, h/2 + 32);
+    }
+
+    function drawPreview(ctx) {
+      const w = ctx.canvas.width, h = ctx.canvas.height;
+      const g = ctx.createLinearGradient(0, 0, w, h);
+      g.addColorStop(0, '#1e3a5f');
+      g.addColorStop(1, '#0a0a0a');
+      ctx.fillStyle = g;
+      ctx.fillRect(0, 0, w, h);
+      ctx.fillStyle = '#3b82f6';
+      ctx.font = 'bold 72px system-ui';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('⚡ BASETAP ⚡', w/2, h/2 - 24);
+      ctx.font = '24px system-ui';
+      ctx.fillStyle = '#9ca3af';
+      ctx.fillText('Tap. Claim. Climb.', w/2, h/2 + 28);
+    }
+
+    const iconCtx = document.getElementById('iconCanvas').getContext('2d');
+    const previewCtx = document.getElementById('previewCanvas').getContext('2d');
+    drawIcon(iconCtx);
+    drawPreview(previewCtx);
+
+    document.getElementById('iconDownload').onclick = (e) => {
+      e.preventDefault();
+      const link = document.createElement('a');
+      link.download = 'icon.png';
+      link.href = document.getElementById('iconCanvas').toDataURL('image/png');
+      link.click();
+    };
+
+    document.getElementById('previewDownload').onclick = (e) => {
+      e.preventDefault();
+      const link = document.createElement('a');
+      link.download = 'preview.png';
+      link.href = document.getElementById('previewCanvas').toDataURL('image/png');
+      link.click();
+    };
+  </script>
+</body>
+</html>

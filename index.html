@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="fc:frame" content="vNext">
+    <meta name="base:app_id" content="[SONRA EKLENECEK]">
+    <title>BaseTap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="header">
+            <h1>⚡ BASETAP ⚡</h1>
+            <p class="subtitle">Tap to earn. Claim once. Climb the ranks.</p>
+        </div>
+
+        <div class="stats-box">
+            <div class="stat">
+                <span class="stat-label">Onchain Points</span>
+                <span class="stat-value" id="totalPoints">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Rank</span>
+                <span class="stat-value" id="userRank">#-</span>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <div class="tap-counter">
+                <span class="tap-label">Pending (1 tx to claim)</span>
+                <span class="tap-value" id="tapCount">0</span>
+            </div>
+
+            <button class="btn btn-tap" id="btnTap">👆 TAP!</button>
+            <button class="btn btn-claim" id="btnClaim" style="display:none;">🚀 CLAIM <span id="claimCount">0</span> POINTS</button>
+
+            <div class="loading" id="loadingState" style="display:none;">
+                <div class="spinner"></div>
+                <p>Claiming...</p>
+                <p class="loading-sub">Approve in your wallet</p>
+            </div>
+
+            <div class="success" id="successState" style="display:none;">
+                <span class="success-icon">✅</span>
+                <p class="success-text">Claimed!</p>
+                <p class="success-sub" id="successCount">0 points added</p>
+                <button class="btn btn-again" id="btnAgain">Tap More</button>
+            </div>
+        </div>
+
+        <div class="leaderboard">
+            <h2>🏆 LEADERBOARD</h2>
+            <div class="leaderboard-list" id="leaderboardList">
+                <div class="leaderboard-empty">Connect wallet to see</div>
+            </div>
+        </div>
+
+        <div class="connection-status" id="connectionStatus">
+            <span class="status-dot"></span>
+            <span id="statusText">Connecting...</span>
+        </div>
+    </div>
+
+    <script type="module" src="game.js"></script>
+</body>
+</html>
