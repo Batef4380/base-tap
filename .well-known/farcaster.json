@@ -1,0 +1,26 @@
+{
+  "accountAssociation": {
+    "header": "[FARCASTER'DAN ALINACAK]",
+    "payload": "[FARCASTER'DAN ALINACAK]",
+    "signature": "[FARCASTER'DAN ALINACAK]"
+  },
+  "frame": {
+    "version": "1",
+    "name": "BaseTap",
+    "subtitle": "Tap to earn points on Base",
+    "description": "Tap to accumulate points, claim with one transaction, climb the leaderboard.",
+    "iconUrl": "https://[DOMAIN]/icon.png",
+    "homeUrl": "https://[DOMAIN]",
+    "imageUrl": "https://[DOMAIN]/preview.png",
+    "splashImageUrl": "https://[DOMAIN]/icon.png",
+    "splashBackgroundColor": "#000000",
+    "primaryCategory": "games",
+    "tags": ["game", "arcade", "farcaster"],
+    "tagline": "Tap. Claim. Climb.",
+    "heroImageUrl": "https://[DOMAIN]/preview.png",
+    "screenshotUrls": ["https://[DOMAIN]/preview.png"],
+    "ogTitle": "BaseTap - Tap to Earn",
+    "ogDescription": "Tap to earn points. One tx to claim. Climb the leaderboard.",
+    "ogImageUrl": "https://[DOMAIN]/preview.png"
+  }
+}
