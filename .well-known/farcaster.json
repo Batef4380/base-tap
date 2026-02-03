@@ -1,26 +1,26 @@
 {
   "accountAssociation": {
-    "header": "[FARCASTER'DAN ALINACAK]",
-    "payload": "[FARCASTER'DAN ALINACAK]",
-    "signature": "[FARCASTER'DAN ALINACAK]"
+    "header": "eyJmaWQiOjEyMTExNDcsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHg4MkFkZmExOGVGNzg1NzZmNkYwMjk4NmExNjA5ZjkxNWEwQmU3NDIwIn0",
+    "payload": "eyJkb21haW4iOiJiYXNldGFwLXBoaS52ZXJjZWwuYXBwIn0",
+    "signature": "bvWZ2mfqUxQ89W1HoKn31zV5ykPtwkovAKY6A+w47jwjqoROrvXSTuydaF+pw29D24MQ/yknfqwquv8OwWHPoBw="
   },
   "frame": {
     "version": "1",
     "name": "BaseTap",
     "subtitle": "Tap to earn points on Base",
     "description": "Tap to accumulate points, claim with one transaction, climb the leaderboard.",
-    "iconUrl": "https://[DOMAIN]/icon.png",
-    "homeUrl": "https://[DOMAIN]",
-    "imageUrl": "https://[DOMAIN]/preview.png",
-    "splashImageUrl": "https://[DOMAIN]/icon.png",
+    "iconUrl": "https://basetap-phi.vercel.app/icon.png",
+    "homeUrl": "https://basetap-phi.vercel.app",
+    "imageUrl": "https://basetap-phi.vercel.app/preview.png",
+    "splashImageUrl": "https://basetap-phi.vercel.app/icon.png",
     "splashBackgroundColor": "#000000",
     "primaryCategory": "games",
     "tags": ["game", "arcade", "farcaster"],
     "tagline": "Tap. Claim. Climb.",
-    "heroImageUrl": "https://[DOMAIN]/preview.png",
-    "screenshotUrls": ["https://[DOMAIN]/preview.png"],
+    "heroImageUrl": "https://basetap-phi.vercel.app/preview.png",
+    "screenshotUrls": ["https://basetap-phi.vercel.app/preview.png"],
     "ogTitle": "BaseTap - Tap to Earn",
     "ogDescription": "Tap to earn points. One tx to claim. Climb the leaderboard.",
-    "ogImageUrl": "https://[DOMAIN]/preview.png"
+    "ogImageUrl": "https://basetap-phi.vercel.app/preview.png"
   }
 }
