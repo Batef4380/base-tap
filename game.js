@@ -104,7 +104,7 @@ async function init() {
       updateConnectionStatus('error', 'No wallet found');
     }
   } catch (error) {
-    console.error('Init error:', error);
+    console.error('Init error:', error.message || error);
     updateConnectionStatus('error', 'Connection failed');
   }
 
