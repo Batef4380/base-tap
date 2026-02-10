@@ -1,6 +1,7 @@
 {
-  "name": "mini-app",
+  "name": "basetap",
   "version": "1.0.0",
+  "description": "Tap to earn onchain points on Base",
   "scripts": {
     "dev": "npx serve . -p 3000"
   },
