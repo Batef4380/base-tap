@@ -301,6 +301,7 @@ body {
 
 .status-dot.error {
   background: #ef4444;
+  animation: statusPulse 1s ease-in-out infinite;
 }
 
 @media (max-height: 700px) {
