@@ -58,3 +58,7 @@ Deploy sonrası alınan adresi `game.js` içindeki `CONTRACT_ADDRESS`'e yaz.
 - **Smart Contract:** Solidity ^0.8.20
 - **SDK:** Farcaster Frame SDK
 - **Hosting:** Vercel
+
+## License
+
+MIT
