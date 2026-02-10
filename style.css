@@ -290,3 +290,12 @@ body {
     font-size: 40px;
   }
 }
+
+@media (max-width: 360px) {
+  .header h1 {
+    font-size: 22px;
+  }
+  .stat-value {
+    font-size: 20px;
+  }
+}
