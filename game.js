@@ -334,7 +334,7 @@ async function loadLeaderboard() {
     const decoded = decodeLeaderboardResult(result);
     renderLeaderboard(decoded);
   } catch (error) {
-    console.error('Load leaderboard error:', error);
+    console.error('Load leaderboard error:', error.message || error);
     renderLeaderboard([]);
   }
 }
