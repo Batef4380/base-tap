@@ -250,6 +250,7 @@ async function submitTaps() {
       showSuccess(tapCount);
     } catch (fallbackError) {
       console.error('Fallback error:', fallbackError);
+      console.error('All TX attempts failed');
       alert('Transaction failed. Please try again.');
       resetGame();
     }
