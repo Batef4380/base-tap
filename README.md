@@ -4,14 +4,14 @@ A tap-to-earn mini app on Base chain. Tap to accumulate points, claim with one t
 
 Built as a Farcaster Frame mini app with on-chain smart contract.
 
-## Lokal Test
+## Getting Started
 
 ```bash
 npm install
 npm run dev
 ```
 
-http://localhost:3000
+Open http://localhost:3000 in your browser.
 
 ## Icon Oluştur
 
