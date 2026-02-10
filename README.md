@@ -19,7 +19,7 @@ Open http://localhost:3000 in your browser.
 2. "Download icon.png" → proje klasörüne taşı
 3. "Download preview.png" → proje klasörüne taşı
 
-## Smart Contract Deploy (Base Sepolia)
+## Smart Contract
 
 ```bash
 # Foundry kur
