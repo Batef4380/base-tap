@@ -228,6 +228,7 @@ body {
 .leaderboard-item.me {
   background: rgba(59, 130, 246, 0.2);
   border: 1px solid #3b82f6;
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.15);
 }
 
 .leaderboard-left {
