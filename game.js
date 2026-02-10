@@ -311,7 +311,7 @@ async function loadUserData() {
     const taps = parseInt(result, 16);
     elements.totalTaps.textContent = taps.toLocaleString();
   } catch (error) {
-    console.error('Load user data error:', error);
+    console.error('Load user data error:', error.message || error);
   }
 }
 
