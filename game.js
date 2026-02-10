@@ -1,7 +1,7 @@
 import { sdk } from 'https://esm.sh/@farcaster/frame-sdk';
 
 // ============ CONFIG ============
-const CONFIG = {
+const CONFIG = Object.freeze({
   // Base Mainnet contract adresi
   CONTRACT_ADDRESS: '0x050BB6591fb1a23b26670C294873A146F0609b45',
 
@@ -11,7 +11,7 @@ const CONFIG = {
   // Game settings
   GAME_DURATION: 10,
   MAX_TAPS_PER_ROUND: 100
-};
+});
 
 // Contract ABI (sadece kullanılan fonksiyonlar)
 const CONTRACT_ABI = [
