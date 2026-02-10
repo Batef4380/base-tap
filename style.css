@@ -191,6 +191,7 @@ body {
   font-weight: 700;
   color: #22c55e;
   margin-bottom: 4px;
+  text-shadow: 0 0 8px rgba(34, 197, 94, 0.3);
 }
 
 .success-sub {
