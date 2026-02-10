@@ -1,6 +1,8 @@
 # BaseTap ⚡
 
-Tıkla → puan biriktir → tek tx ile claim et → leaderboard'a gir.
+A tap-to-earn mini app on Base chain. Tap to accumulate points, claim with one transaction, climb the leaderboard.
+
+Built as a Farcaster Frame mini app with on-chain smart contract.
 
 ## Lokal Test
 
