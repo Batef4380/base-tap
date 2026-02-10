@@ -287,6 +287,12 @@ body {
 
 .status-dot.connected {
   background: #22c55e;
+  animation: statusPulse 2s ease-in-out infinite;
+}
+
+@keyframes statusPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
 }
 
 .status-dot.error {
