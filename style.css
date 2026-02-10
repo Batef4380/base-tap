@@ -46,6 +46,8 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .stat {
