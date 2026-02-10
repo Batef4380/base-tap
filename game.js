@@ -384,7 +384,7 @@ function updateConnectionStatus(status, text) {
 }
 
 function formatAddress(address) {
-  if (!address) return '';
+  if (!address || address.length < 10) return '';
   return `${address.slice(0, 6)}...${address.slice(-4)}`;
 }
 
