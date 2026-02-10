@@ -173,8 +173,9 @@ function handleTap() {
   tapCount++;
   elements.tapCount.textContent = tapCount;
 
-  // Visual feedback
+  // Visual feedback with haptic
   elements.btnTap.style.transform = 'scale(0.9)';
+  if (navigator.vibrate) navigator.vibrate(10);
   setTimeout(() => {
     elements.btnTap.style.transform = 'scale(1)';
   }, 50);
