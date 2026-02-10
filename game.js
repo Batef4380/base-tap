@@ -439,4 +439,4 @@ function decodeLeaderboardResult(result) {
 }
 
 // ============ START ============
-init();
+document.addEventListener('DOMContentLoaded', init);
