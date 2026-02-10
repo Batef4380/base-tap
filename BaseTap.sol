@@ -3,6 +3,7 @@ pragma solidity ^0.8.20;
 
 /**
  * @title BaseTap
+ * @author Batuhan Efe
  * @notice Tap-to-earn game with on-chain leaderboard
  * @dev Optimized for batch transactions via EIP-5792
  */
