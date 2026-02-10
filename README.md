@@ -50,3 +50,11 @@ Deploy sonrası alınan adresi `game.js` içindeki `CONTRACT_ADDRESS`'e yaz.
 
 1. Base App → Add Mini App → URL gir
 2. Verilen `base:app_id` → `index.html` meta tag'e ekle
+
+## Tech Stack
+
+- **Frontend:** Vanilla HTML/CSS/JS
+- **Blockchain:** Base Mainnet (Chain ID 8453)
+- **Smart Contract:** Solidity ^0.8.20
+- **SDK:** Farcaster Frame SDK
+- **Hosting:** Vercel
