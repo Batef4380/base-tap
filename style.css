@@ -141,7 +141,7 @@ body {
 
 .btn-again {
   padding: 16px 32px;
-  background: #3b82f6;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
   color: white;
   margin-top: 16px;
 }
