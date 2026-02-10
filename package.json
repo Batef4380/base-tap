@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "npx serve . -p 3000"
   },
+  "author": "Batuhan Efe",
+  "license": "MIT",
   "devDependencies": {
     "serve": "^14.2.0"
   }
