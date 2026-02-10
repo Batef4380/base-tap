@@ -230,7 +230,7 @@ async function submitTaps() {
       }]
     });
 
-    console.log('Batch TX result:', result);
+    console.log('Batch TX result:', JSON.stringify(result));
 
     // Show success
     showSuccess(tapCount);
