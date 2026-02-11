@@ -320,4 +320,7 @@ body {
   .stat-value {
     font-size: 20px;
   }
+  .tap-value {
+    font-size: 36px;
+  }
 }
