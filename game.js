@@ -9,7 +9,7 @@ const CONFIG = Object.freeze({
   RELOAD_DELAY: 3000
 });
 
-// Contract ABI (sadece kullanılan fonksiyonlar)
+// Contract ABI (only used functions)
 const CONTRACT_ABI = [
   {
     name: 'tap',
