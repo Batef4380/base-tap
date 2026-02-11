@@ -238,7 +238,7 @@ async function submitTaps() {
     }, CONFIG.RELOAD_DELAY);
 
   } catch (error) {
-    console.error('Submit error:', error);
+    console.error('Batch submit error:', error.message || error);
 
     // Fallback: Try single tapMultiple transaction
     try {
