@@ -254,7 +254,7 @@ async function submitTaps() {
 }
 
 async function submitSingleTx(count) {
-  // Fallback: tapMultiple in single transaction
+  // Fallback: submit all taps in a single tapMultiple call
   const data = encodeFunctionCall('tapMultiple', [count]);
 
   await provider.request({
