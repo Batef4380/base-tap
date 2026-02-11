@@ -2,15 +2,11 @@ import { sdk } from 'https://esm.sh/@farcaster/frame-sdk';
 
 // ============ CONFIG ============
 const CONFIG = Object.freeze({
-  // Base Mainnet contract adresi
   CONTRACT_ADDRESS: '0x050BB6591fb1a23b26670C294873A146F0609b45',
-
-  // Base Mainnet Chain ID
   CHAIN_ID: 8453,
-
-  // Game settings
   GAME_DURATION: 10,
-  MAX_TAPS_PER_ROUND: 100
+  MAX_TAPS_PER_ROUND: 100,
+  RELOAD_DELAY: 3000
 });
 
 // Contract ABI (sadece kullanılan fonksiyonlar)
@@ -239,7 +235,7 @@ async function submitTaps() {
     setTimeout(async () => {
       await loadUserData();
       await loadLeaderboard();
-    }, 3000);
+    }, CONFIG.RELOAD_DELAY);
 
   } catch (error) {
     console.error('Submit error:', error);
